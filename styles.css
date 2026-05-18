@@ -339,7 +339,6 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   line-height: 1.5;
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
 }
-.hero-home .hero-sub { font-family: var(--font-serif); }
 
 .tagline-stack {
   font-family: var(--font-serif);
