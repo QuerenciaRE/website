@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Not found — Querencia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="wordmark" href="index.html" aria-label="Querencia — home">QUERENCIA</a>
+
+      <nav class="site-nav site-nav--desktop" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="capabilities.html">Capabilities</a>
+        <a class="nav-link" href="investors.html">Investors</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav id="mobile-nav" class="site-nav--mobile" aria-label="Primary" aria-hidden="true">
+      <div class="container">
+        <a class="mobile-nav-link" href="index.html" tabindex="-1">Home</a>
+        <a class="mobile-nav-link" href="about.html" tabindex="-1">About</a>
+        <a class="mobile-nav-link" href="capabilities.html" tabindex="-1">Capabilities</a>
+        <a class="mobile-nav-link" href="investors.html" tabindex="-1">Investors</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-shell">
+      <section class="hero" style="min-height: 40vh; max-height: 320px;">
+        <img class="hero-img" src="img/HomeBW.jpg" alt="" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </section>
+      <div class="not-found">
+        <span class="eyebrow">404</span>
+        <h1>That page isn't here.</h1>
+        <p>Use the navigation above, or return home.</p>
+        <div>
+          <a class="btn" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="footer-wordmark" href="index.html" aria-label="Querencia — home">QUERENCIA</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a class="footer-nav-link" href="index.html">Home</a>
+          <a class="footer-nav-link" href="about.html">About</a>
+          <a class="footer-nav-link" href="capabilities.html">Capabilities</a>
+          <a class="footer-nav-link" href="investors.html">Investors</a>
+        </nav>
+      </div>
+      <div class="footer-meta">
+        <a href="mailto:matt@querencia-re.com">matt@querencia-re.com</a>
+        <span>© 2026 Querencia</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+</body>
+</html>

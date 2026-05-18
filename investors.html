@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investors — Querencia</title>
+  <meta name="description" content="What our investors seek — and access to investor materials." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="wordmark" href="index.html" aria-label="Querencia — home">QUERENCIA</a>
+
+      <nav class="site-nav site-nav--desktop" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="capabilities.html">Capabilities</a>
+        <a class="nav-link" href="investors.html" aria-current="page">Investors</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 5v14M5 12h14"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav id="mobile-nav" class="site-nav--mobile" aria-label="Primary" aria-hidden="true">
+      <div class="container">
+        <a class="mobile-nav-link" href="index.html" tabindex="-1">Home</a>
+        <a class="mobile-nav-link" href="about.html" tabindex="-1">About</a>
+        <a class="mobile-nav-link" href="capabilities.html" tabindex="-1">Capabilities</a>
+        <a class="mobile-nav-link" href="investors.html" aria-current="page" tabindex="-1">Investors</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-shell">
+      <section class="hero">
+        <img class="hero-img" src="img/HomeBW.jpg" alt="Live oak canopy at golden hour, Central Texas" fetchpriority="high" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="container">
+            <h1>High conviction and <em>high alignment</em></h1>
+            <p class="hero-sub">The investors who work with us aren't looking for simple exposure to an asset class. They're looking for specific opportunities, presented conservatively, structured fairly, and managed by someone with skin in the game.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="two-col two-col--equal">
+            <div>
+              <div class="chapter">
+                <span class="eyebrow-rule">What Our Investors Seek</span>
+                <h2 class="chapter-headline">An operator who thinks <em>like they do.</em></h2>
+              </div>
+
+              <ul class="bullet-dot-list">
+                <li>A high-touch operator who applies a bespoke, ground-up analysis to every opportunity</li>
+                <li>A sponsor aligned with the performance of the investment, not total assets under management</li>
+                <li>Investment analysis based on first principles and a willingness (but not necessity) to go against the status quo</li>
+                <li>Frequent re-assessment of where an asset sits in its life cycle and the capital markets cycle (every day an asset isn't sold, it is bought again)</li>
+                <li>A sponsor who protects the downside before reaching for the upside</li>
+                <li>Transparent, detailed investor communication from a sponsor who will not be mollified by good news and, whenever it does arrive, will share the bad news first</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="chapter">
+                <span class="eyebrow-rule">Investor Materials</span>
+                <h2 class="chapter-headline">Learn more about <em>our strategy.</em></h2>
+              </div>
+
+              <p style="max-width: 65ch; line-height: 1.55; color: var(--text-body); margin-bottom: var(--space-8);">
+                Enter the password provided to you to access current materials and updates.
+              </p>
+              <form id="gate-form" novalidate style="max-width: 420px;">
+                <div class="field">
+                  <label for="pw">Password</label>
+                  <input id="pw" type="password" autocomplete="off" aria-describedby="pw-err" />
+                  <div class="help-error" id="pw-err" hidden>
+                    That password didn't work. Email <a class="link-inline" href="mailto:matt@querencia-re.com">matt@querencia-re.com</a> for access.
+                  </div>
+                </div>
+                <button type="submit" class="btn" disabled>Continue</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="footer-wordmark" href="index.html" aria-label="Querencia — home">QUERENCIA</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a class="footer-nav-link" href="index.html">Home</a>
+          <a class="footer-nav-link" href="about.html">About</a>
+          <a class="footer-nav-link" href="capabilities.html">Capabilities</a>
+          <a class="footer-nav-link" href="investors.html">Investors</a>
+        </nav>
+      </div>
+      <div class="footer-meta">
+        <a href="mailto:matt@querencia-re.com">matt@querencia-re.com</a>
+        <span>© 2026 Querencia</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+</body>
+</html>
