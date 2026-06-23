@@ -822,6 +822,12 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 }
 .footer-meta a { color: var(--text-body); text-decoration: none; }
 .footer-meta a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.footer-address { color: var(--text-body); }
 
 /* ---------- 404 ---------- */
 .not-found {
