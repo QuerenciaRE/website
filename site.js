@@ -43,7 +43,7 @@
     gateForm.addEventListener('submit', function (e) {
       e.preventDefault();
       if (input.value.trim().toLowerCase() === 'fnf') {
-        window.location.href = 'investors-confidential.html';
+        window.location.href = '/investors-confidential';
       } else {
         if (err) err.hidden = false;
         input.setAttribute('aria-invalid', 'true');
