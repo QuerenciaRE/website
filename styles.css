@@ -691,9 +691,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 
 .chapter { display: block; }
 .eyebrow-rule {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3);
+  display: inline-block;
   font-family: var(--font-sans);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -701,13 +699,6 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: var(--space-6);
-}
-.eyebrow-rule::before {
-  content: "";
-  width: 28px;
-  height: 1px;
-  background: var(--framing);
-  display: block;
 }
 .chapter-headline {
   font-family: var(--font-serif);
