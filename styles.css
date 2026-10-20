@@ -325,10 +325,15 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   letter-spacing: -0.015em;
   text-shadow: 0 1px 16px rgba(0, 0, 0, 0.35);
 }
-.hero h1 em {
-  font-style: italic;
-  color: rgb(232, 181, 71);
+/* Hand-drawn gold swoosh under the accent words of the hero headline. */
+.hero h1 em,
+.tagline-stack .tagline-accent {
+  font-style: normal;
   font-weight: 400;
+  padding-bottom: 0.14em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M3 9.5 Q 70 3 197 5.5' fill='none' stroke='rgb(232,181,71)' stroke-width='3' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") no-repeat left bottom / 100% 0.22em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .hero-sub {
   max-width: 60ch;
@@ -351,10 +356,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   text-shadow: 0 1px 16px rgba(0, 0, 0, 0.35);
 }
 .tagline-stack span { display: block; }
-.tagline-stack .tagline-accent {
-  font-style: italic;
-  color: rgb(232, 181, 71);
-}
+.tagline-stack .tagline-accent { justify-self: start; }
 
 /* Mobile (matches mobile-nav breakpoint): shrink hero text and shift it lower
    so the open menu has clear space above the title. */
@@ -723,6 +725,14 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   display: grid;
   gap: var(--space-4);
   max-width: 65ch;
+}
+@media (min-width: 1024px) {
+  .bullet-dot-list--2col {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 80px;
+    row-gap: var(--space-6);
+    max-width: none;
+  }
 }
 .bullet-dot-list li {
   position: relative;
